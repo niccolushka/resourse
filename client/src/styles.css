@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: theme('fontFamily.sans');
+  background: radial-gradient(circle at top, rgba(0,229,255,0.1), transparent 45%),
+    radial-gradient(circle at bottom, rgba(255,209,102,0.08), transparent 40%),
+    #020617;
+  min-height: 100vh;
+}
+
+.section {
+  @apply py-20 px-6 md:px-12 max-w-6xl mx-auto;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold text-white mb-6;
+}
+
+.section-subtitle {
+  @apply text-lg text-slate-300 max-w-3xl;
+}
